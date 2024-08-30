@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0); /* Optional background */
+  border-radius: 50%; /* Optional rounded shape */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Change on hover */
+}
+.boxShadow{
+  box-shadow: 0px 0px 10px #b9b9b9;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #979797de ;
+  border-radius: 10px;
+}
+
+.brandsInfinite:hover .animation{
+animation-play-state: paused;
+}
+.animation{
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  100%{
+      transform: translate(-100%);
+  }
+}
+
+
+
+/* 
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.box-container {
+  width: 100%;
+  max-width: calc(150px * 8);
+  margin: 100px auto;
+  display: flex;
+  gap: 5px;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+
+  
+ 
+}
+
+:root{
+  --delay: 30s;
+  --box: 8;
+}
+.box-container .box {
+  height: 80px;
+  width: 150px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: max( calc(150px * var(--box)), 100% );
+  animation-name: animate;
+  animation-duration: var(--delay);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+.box-container:hover .box {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.box1{
+  animation-delay: calc(var(--delay) / var(--box) * (var(--box) - 1) * -1 );
+  background-image: url("public/brandLogos/adidas.png");
+}
+.box2{
+  animation-delay: calc(var(--delay) / var(--box) * (var(--box) - 2) * -1 );
+  background-image: url('public/brandLogos/metro.jpeg');
+}
+.box3{
+  animation-delay: calc(var(--delay) / var(--box) * (var(--box) - 3) * -1 );
+  background-image: url('public/brandLogos/nike.png');
+}
+.box4{
+  animation-delay: calc(var(--delay) / var(--box) * (var(--box) - 4) * -1 );
+  background-image: url('public/brandLogos/Paragon_Banking_Group-Logo.wine.png');
+}
+.box5{
+  animation-delay: calc(var(--delay) / var(--box) * (var(--box) - 5) * -1 );
+  background-image: url('public/brandLogos/PARAGON.webp');
+}
+.box6{
+  animation-delay: calc(var(--delay) / var(--box) * (var(--box) - 6) * -1 );
+  background-image: url('public/brandLogos/puma.png');
+}
+.box7{
+  animation-delay: calc(var(--delay) / var(--box) * (var(--box) - 7) * -1 );
+  background-image: url('public/brandLogos/skechers.png');
+}
+.box8{
+  animation-delay: calc(var(--delay) / var(--box) * (var(--box) - 8) * -1 );
+  background-image: url('public/brandLogos/woodland.png');
+} */
+
