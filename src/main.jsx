@@ -6,6 +6,8 @@ import { Login, Home, Signup, Contact, About, MyAccount, Profile, EditProfile, W
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -62,12 +64,12 @@ const router = createBrowserRouter([
         element: <Login />
       },
       {
-        path: "/signup",
-        element: <Signup />
+        path:"/signup",
+        element:<Signup/>
       }
     ]
   }
-])
+]);
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
